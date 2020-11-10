@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: green;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body{
+  background-image: url('../img/natural-pattern.png');
+  background-size: cover;
+}
+
+.container{
+  width: 70%;
+  padding: 10px;
+  margin: auto;
+}
+
+header div.foresta{
+  height: 20vh;
+  border: 5px solid white;
+  color: lightgreen;
+  font-size: 30px;
+}
+
+.foresta{
+  background-image: url('../img/natural-header.jpg');
+  background-size: cover;
+}
+
+nav{
+  background-color: grey;
+  height: 45px;
+  text-align: center;
+}
+
+main{
+  margin: 10px 0;
+}
+
+footer{
+  background-color: rgb(154, 235, 174);
+  height: 10vh;
+  border: 5px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  bottom: 0;
+  text-align: center;
+}
+
+/* COLONNA SINISTRA */
+aside.col-sx{
+background-color: rgb(154, 235, 174);
+width: calc(25% - 10px);
+margin-right: 20px;
+padding: 5px;
+border: 5px solid white;
+border-radius: 5px;
+}
+
+/* COLONNA CENTRALE */
+section.colmain{
+background-color: rgb(154, 235, 174);
+width: calc(50% - 20px);
+padding: 10px;
+border: 5px solid white;
+border-radius: 5px;
+}
+
+/* BOX DESTRA */
+aside.col-dx{
+width: calc(25% - 10px);
+}
+
+aside.col-dx div.box{
+background-color: rgb(154, 235, 174);
+padding: 5px;
+margin-bottom: 20px;
+border: 5px solid white;
+border-radius: 5px;
+}
+
+/* TITOLONE HEADER */
+.titolone{
+  height: 20px;
+  text-align: center;
+  /* position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.natural-logo{
+  height: 15vh;
+}
+
+/* TITOLINO HEADER */
+.titolino{
+  position: relative;
+  text-align: center;
+  top: 60%;
+}
+
+/* DISPOSIZIONE MENU */
+nav .menu li{
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 10px;
+}
+
+nav .menu li a{
+  color: lightgreen;
+}
+
+nav .menu li:hover{
+  background-color: lightgrey;
+  text-decoration: underline;
+}
+
+nav .menu li:hover a{
+  color: green;
+}
+
+/* SCRITTE COLONNA SINISTRA */
+main aside.col-sx p{
+  padding-top: 10px;
+}
+
+main aside.col-sx p:hover{
+  text-decoration: underline;
+}
+
+div.sx-top{
+  width: 100%;
+}
+
+aside.col-sx div.sx-top div.sig{
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* SCRITTE CENTRO */
+section.colmain h3{
+  padding: 10px 0 20px;
+  font-size: 30px;
+}
+
+section.colmain p{
+  line-height: 20px;
+}
+
+/* SCRITTE DESTRO */
+aside.col-dx h3{
+  padding: 10px 0 20px;
+  font-size: 25px;
+}
+
+aside.col-dx p{
+  line-height: 20px;
+}
+
+/* SCRITTA FOOTER */
+div.footer-top{
+  height: 20%;
+  text-align: center;
+  border-bottom: 2px solid grey;
+}
+
+/* ICONE FOOTER */
+div.social{
+  height: 80%;
+  width: calc(100% / 3);
+  float: left;
+  color: grey;
+}
+
+div.icon i{
+  font-size: 50px;
+}
+
+div.icon i:hover{
+  color: green;
+  cursor: pointer;
+}
+
+div.icon{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
